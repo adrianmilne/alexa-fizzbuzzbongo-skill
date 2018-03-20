@@ -1,0 +1,37 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "",
+			"Effect": "Allow",
+			"Action": [
+				"logs:PutLogEvents",
+				"logs:DescribeLogStreams",
+				"logs:CreateLogStream",
+				"logs:CreateLogGroup"
+			],
+			"Resource": "arn:aws:logs:*:*:*"
+		},
+		{
+			"Sid": "",
+			"Action": [
+				"xray:PutTraceSegments",
+				"xray:PutTelemetryRecords"
+			],
+			"Effect": "Allow",
+			"Resource": [
+				"*"
+			]
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"dynamodb:DescribeTable",
+				"dynamodb:PutItem",
+				"dynamodb:GetItem",
+				"dynamodb:UpdateItem"
+			],
+			"Resource": "arn:aws:dynamodb:*:*:*"
+		}
+	]
+}

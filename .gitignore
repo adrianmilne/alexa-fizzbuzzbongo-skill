@@ -1,0 +1,8 @@
+/target/
+.classpath
+.project
+.settings/
+# remove these if you wish to commit your terraform state
+/IaC/terraform/fizzbuzz/.terraform/*
+/IaC/terraform/fizzbuzz/terraform.tfstate
+/IaC/terraform/fizzbuzz/terraform.tfstate.backup

@@ -1,0 +1,172 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "LIST_OF_OPTIONS",
+        "values": [
+          {
+            "id": "",
+            "name": {
+              "value": "fizzbuzz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "",
+            "name": {
+              "value": "buzz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "",
+            "name": {
+              "value": "fizz",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "",
+            "name": {
+              "value": "bongo",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "",
+            "name": {
+              "value": "fizzbongo",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "",
+            "name": {
+              "value": "buzzbongo",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "",
+            "name": {
+              "value": "fizzbuzzbongo",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "FizzBuzzIntent",
+        "samples": [
+          "answer is {FizzBuzz}",
+          "I choose {FizzBuzz}",
+          "option {FizzBuzz}",
+          "go for {FizzBuzz}",
+          "the answer is {FizzBuzz}",
+          "my answer is {FizzBuzz}",
+          "{FizzBuzz}",
+          "answer is {Number}",
+          "I choose {Number}",
+          "option {Number}",
+          "go for {Number}",
+          "the answer is {Number}",
+          "my answer is {Number}",
+          "{Number}"
+        ],
+        "slots": [
+          {
+            "name": "FizzBuzz",
+            "type": "LIST_OF_OPTIONS"
+          },
+          {
+            "name": "Number",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "NewGameIntent",
+        "samples": [
+          "begin a game",
+          "begin a new game",
+          "begin game",
+          "begin new game",
+          "create a game",
+          "create a new game",
+          "create game",
+          "create new game",
+          "do a game",
+          "do a new game",
+          "do game",
+          "do new game",
+          "make a game",
+          "make a new game",
+          "make game",
+          "make new game",
+          "new game",
+          "open a game",
+          "open a new game",
+          "open game",
+          "open new game",
+          "restart",
+          "restart game",
+          "set up a game",
+          "set up a new game",
+          "set up game",
+          "set up new game",
+          "start a game",
+          "start a new game",
+          "begin a game at {Number}",
+          "begin a new game at {Number}",
+          "begin game at {Number}",
+          "begin new game at {Number}",
+          "create a game at {Number}",
+          "create a new game at {Number}",
+          "create game at {Number}",
+          "create new game at {Number}",
+          "do a game at {Number}",
+          "do a new game at {Number}",
+          "do game at {Number}",
+          "do new game at {Number}",
+          "make a game at {Number}",
+          "make a new game at {Number}",
+          "make game at {Number}",
+          "make new game at {Number}",
+          "new game at {Number}",
+          "open a game at {Number}",
+          "open a new game at {Number}",
+          "open game at {Number}",
+          "open new game at {Number}",
+          "restart at {Number}",
+          "restart game at {Number}",
+          "set up a game at {Number}",
+          "set up a new game at {Number}",
+          "set up game at {Number}",
+          "set up new game at {Number}",
+          "start a game at {Number}",
+          "start a new game at {Number}"
+        ],
+        "slots": [
+         {
+            "name": "Number",
+            "type": "AMAZON.NUMBER"
+          }]
+      }
+    ],
+    "invocationName": "fizz buzz game"
+  }
+}
