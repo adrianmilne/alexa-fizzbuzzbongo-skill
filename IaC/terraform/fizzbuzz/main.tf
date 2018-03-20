@@ -9,6 +9,6 @@ module "fizzbuzz" {
     source = "../modules/s3-lambda-ddb"
 
     fizzbuzz_lambda_function_name = "alexa-fizzbuzzbongo-skill"
-    fizzbuzz_lambda_object_key = "alexa-fizzbuzzbongo-0.0.1-SNAPSHOT-jar-with-dependencies.jar"
+    fizzbuzz_lambda_object_key = "alexa-fizzbuzzbongo-0.0.1-jar-with-dependencies.jar"
 	dynamoDbTable = "FizzBuzzBongoUserData"
 }
