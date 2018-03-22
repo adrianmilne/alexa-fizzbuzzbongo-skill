@@ -1,42 +1,14 @@
-# README #
+# 'Fizz Buzz Bongo' Alexa Skill -Java Lambda Code and Terraform Deployment Template #
 
-## Build jar with Maven ##
-mvn assembly:assembly -DdescriptorId=jar-with-dependencies package
+This repository holds the source code to create the 'Fizz Buzz Bongo' Alexa Skill - available at https://www.amazon.co.uk/Adrian-Milne-Fizz-Buzz-Bongo/dp/B07BKNDQTD.
 
-## Install Terraform ##
+Explanations and instructions for building and deploying this Java 8 code as an AWS Lambda, and then publishing it as an Alexa skill are available in the following blog posts:
 
-### Download and install AWS CLI (if not already) ###
-* https://aws.amazon.com/cli/
+## Developing an Alexa Skill: Part 1, Create Java Lambda  ##
+http://www.adrianmilne.com/alexa-skill-part-1-create-java-lambda/
 
-### Download and install terraform ###
-* https://www.terraform.io/downloads.html
-* add to $PATH
+## Developing an Alexa Skill: Part 2, Deploying to AWS Using Terraform ##
+http://www.adrianmilne.com/alexa-skill-part-2-aws-using-terraform/
 
-## Set Your AWS Credentials ##
-* Create an IAM User in your AWS account that you can use to provision
-
-## Build Infrastructure ##
-
-### Initialise the working directory
-* cd {repo_location}/fizzbuzz-lambda/IaC/terraform/fizzbuzz
-* terraform init
-
-### Deploy to AWS ###
-* cd {repo_location}/fizzbuzz-lambda/IaC/terraform/fizzbuzz
-* terraform plan
-* terraform apply
-
-### Delete ###
-* terraform destroy
-
-
-------------------------------------
-# Notes for articles #
-
-## 1. Create an Alexa Skill ##
-
-## 2. Create the Lambda ##
-
-## 3. Deploy the Lambda using Terraform ##
-
-## 4. Deploy the Lambda using CloudFormation ##
+## Developing an Alexa Skill: Part 3, Publishing the Skill##
+http://www.adrianmilne.com/alexa-skill-part-3-publish/
