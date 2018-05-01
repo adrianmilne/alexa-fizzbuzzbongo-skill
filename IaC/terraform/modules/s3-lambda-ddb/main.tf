@@ -62,8 +62,8 @@ resource "aws_lambda_permission" "alexa-trigger" {
 
 resource "aws_dynamodb_table" "fizzbuzz_dynamodb_table" {
   name           = "${var.dynamoDbTable}"
-  read_capacity  = 5
-  write_capacity = 5
+  read_capacity  = 1
+  write_capacity = 1
   hash_key       = "UserId"
 
   attribute {
